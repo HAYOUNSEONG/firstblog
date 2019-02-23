@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>BLOG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Contact -->
+  <div class="container">
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+        <h3 class="w3-center">글쓰기</h3>
+        <hr>
+        
+    
+        <form action="{% url 'create' %}" target="_blank">
+          <div class="w3-section">
+            <label>제목</label>
+            <input class="w3-input w3-border" type="text" name="title">
+          </div>
+          <div class="w3-section">
+            <label>본문</label>
+            <textarea class="w3-input w3-border" name="body" rows="10" cols="40"></textarea>
+          </div>
+          
+          <button type="submit" class="w3-button w3-block w3-dark-grey">제출하기</button>
+        </form><br>
+        
+    
+      </div>
+    </div>
+      </html>

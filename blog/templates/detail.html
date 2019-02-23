@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BLOG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Contact -->
+  <div class="container">
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+        <h3 class="w3-center">BLOG</h3>
+        <hr>
+        
+    
+        
+          <div class="w3-section">
+            <label>제목</label>
+            <h1> {{ blog.title }} </h1>
+          </div>
+          <div class="w3-section">
+            <label>날짜</label>
+            <p> {{ blog.pub_date }} </p>
+          </div>
+
+          <div class="w3-section">
+                <label>본문 내용</label>
+                <p>{{ blog.body }}</p>
+              </div>
+          
+          <button type="submit" class="w3-button w3-block w3-dark-grey"><a href="{% url 'home' %}">뒤로가기</a></button>
+        <br>
+        
+    
+      </div>
+    </div>
+      </html>
+
