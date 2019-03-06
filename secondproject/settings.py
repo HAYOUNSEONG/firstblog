@@ -133,14 +133,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 
-### Django ###
-    *.log
-    *.pot
-    *.pyc
-    __pycache__/
-    local_settings.py
-    db.sqlite3
-    media
+
 
     import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
